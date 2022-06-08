@@ -14,22 +14,20 @@
 1) Go to desktp and download the raspberry labs in Github <pre>
 cd Desktop
 git clone https://github.com/alcidescosta/raspberrypi.git labs</pre>
-2) Install the Adafruit_SSD1306 package (needs review) <pre>
-cd ~
-sudo apt-get update
-sudo apt-get install build-essential python-dev python3-pip
-sudo apt-get install python-imaging python-smbus
-sudo python3 -m pip install --upgrade pip setuptools wheel
-sudo pip3 install --upgrade setuptools
-sudo pip3 install RPi.GPIO
-sudo pip3 install adafruit-circuitpython-dht
-sudo pip3 install Adafruit-SSD1306 </pre>
-3) 
-git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
-cd Adafruit_Python_SSD1306
-sudo python3 setup.py install </pre>
-4) adsd
-5) fsdf
-6) 
-7) 
-8) Make an identical to another micro SD card <pre> dd if=/ ... of=</pre>
+2) Install Ada Fruit Packages (needs review) <pre>
+  cd ~
+  sudo apt-get update
+  sudo apt-get install build-essential python-dev python3-pip
+  sudo apt-get install python-imaging python-smbus
+  sudo python3 -m pip install --upgrade pip setuptools wheel
+  sudo pip3 install --upgrade setuptools
+  sudo pip3 install RPi.GPIO
+  sudo pip3 install adafruit-circuitpython-dht
+  sudo pip3 install Adafruit-SSD1306 </pre>
+3) Power off the system, eject the SD card and make an identical copy<pre>
+  sudo dd if=/dev/sdc of=raspian.img bs=4M status=progress 
+  sudo dd if=raspian.img of=/dev/sdc bs=4M status=progress</pre>
+4) Eject the new copied card and test it in a Raspberry board
+5) Repeat step 3 until have one SD card for each raspberry
+
+**Done!** 
