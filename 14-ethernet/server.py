@@ -6,7 +6,7 @@ s = socket.socket()
 # Atribui IP e porta em um socket. Estas informações são necessárias
 # no lado-cliente para que este possa qual IP e porta o servidor está
 # escutando.
-host = '192.168.10.101'
+host = 'localhost'
 port = 1234
 s.bind((host, port))
 

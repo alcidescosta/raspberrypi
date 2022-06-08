@@ -5,7 +5,7 @@ def log_temp(temperature):
 #   temp_c, temp_f = read_temp()
     dt = datetime.datetime.now()
     f = open(logging_file, 'a')
-    f.write('\n"{:%H:%M:%S}",'.format(dt))
+    f.write('\n{:%H:%M:%S},'.format(dt))
 #   f.write(str(temp_c))
     f.write(temperature)
     f.close()
@@ -28,7 +28,7 @@ s = socket.socket()
 # Atribui IP e porta em um socket. Estas informações são necessárias
 # no lado-cliente para que este possa qual IP e porta o servidor está
 # escutando.
-host = '192.168.10.101'
+host = 'localhost'
 port = 1234
 s.bind((host, port))
 

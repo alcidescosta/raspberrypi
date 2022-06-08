@@ -1,7 +1,7 @@
 import socket
 
 s = socket.socket()
-host = '192.168.10.101'
+host = 'localhost'
 port = 1234
 s.connect((host, port))
 print(s.recv(1024).decode())
