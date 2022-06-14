@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 ######################################################################
 # CABECALHO
 # Adicione aqui as bibliotecas usadas para o desenvolvimento deste

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os, glob, time, datetime
 
 # Define o intervalo de tempo em cada amostagem

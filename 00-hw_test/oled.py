@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import time
 import Adafruit_SSD1306
 from PIL import Image
