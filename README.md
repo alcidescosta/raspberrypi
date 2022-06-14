@@ -3,7 +3,7 @@ This file contains instructions on how to
 
 * install the Raspberry Pi 3 (model B) operating system using
 Fedora Linux release 34 (Thirty Four)
-* setup the Raspberry OS
+* set up the Raspberry OS
 * install the Python required packages
 
 The steps above are required to run the examples of this repo. When
@@ -18,7 +18,7 @@ OS.
 
 1) Install the Raspberry Pi Imager <pre> sudo dnf install rpi-imager</pre>
 2) Connect the micro SD card into the reader and run the Raspberry Pi Imager<pre> rpi-imager </pre>
-3) Choose "Raspberry Pi OS 32-bit" and select the micro SD card for writing (you can use an USB adapter if needed)
+3) Choose "Raspberry Pi OS 32-bit" and select the micro SD card for writing (you can use a USB adapter if needed)
 4) Detach the micro SD card (with or without the USB adaptor) and connect it to the micro SD interface of your Raspberry Pi
 5) Turn on the Raspberry board and wait until the installation finish
 
